@@ -22,7 +22,7 @@ export default ( {navigation} ) => {
 
         await AsyncStorage.setItem('user', _id)
 
-        navigation.navigate('Main', { _id })
+        navigation.navigate('Main', { user: _id })
 
     }
 
